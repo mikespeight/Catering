@@ -1,14 +1,14 @@
 {
-  "name": "servicestore",
+  "name": "Catering",
   "version": "1.0.0",
-  "description": "London Borough of Waltham Forest Weddings",
+  "description": "London Borough of Waltham Forest - Catering",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://xp-dev.com/git/Legal"
+    "url": "https://xp-dev.com/git/WfCatering"
   },
   "author": "Mike Speight",
   "license": "ISC",

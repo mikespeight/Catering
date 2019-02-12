@@ -24,7 +24,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>The Hub - Waltham Forest Education Hub</title>
+    <title>London Borough of Waltham Forest - Website generic codebase</title>
 
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
@@ -35,432 +35,367 @@
 
 
 </head>
-<body>
+
+<body class="homepage">
 
 <div class="page-wrapper">
 
-    <header>
+    <header class="page-header">
 
-        <a href="../" id="logo" class="logo">
-            <h1>The Hub</h1>
-        </a>
+        <section class="top-nav max-width-content">
 
-        <nav class="user-nav hidden-md-down">
-            <ul>
-                <li><a href="">Login</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Training and Events</a></li>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-expand-lg">
+                <!--<a class="navbar-brand suntrap-logo" href="#">Suntrap centre</a>-->
 
-        <div id="search-trigger" class="search-trigger hidden-lg-up">
-            <button id="search-btn" class="mag-glass"></button>
-        </div>
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Learn</a>
+                        </li>
+                        <li class="nav-item dropdown item--active-trail">
+                            <a href="#" class="dropdown-toggle is-active" data-toggle="dropdown">Play</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Events</a>
+                                </li>
+                                <li>
+                                    <a href="#">Camping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Birthday parties</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Wellbeing</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Item 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Item 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
 
-        <div id="search-wrapper" class="page-search-wrapper hidden-md-down">
-            <div id="search" class="page-search">
-                <form class="page-search-form" action="/search/node">
-                    <div class="form-item">
-                        <label for="search-box">Search
-                        </label>
-                        <input id="search-box" class="search-box" placeholder="Search" name="keys" type="text">
-                    </div>
-                    <div class="form-actions">
-                        <input type="submit">
-                    </div>
-                </form>
-            </div>
-        </div>
+                <button class="navbar-toggler burger-menu" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </nav>
 
-
-
-        <div id="menu-trigger" class="hamburger">
-            <span></span>
-        </div>
+        </section>
 
     </header>
 
-    <div id="main-nav" class="main-navigation">
+    <a class="navbar-brand suntrap-logo" href="#">Suntrap centre</a>
 
-        <nav class="main-nav navbar">
+    <section class="hero">
 
-            <ul>
-                <li class="dropdown">
-                    <a href="">Early Years and childcare</a>
-                    <div class="dropdown-menu">
-                        <ul>
-                            <li>
-                                <a href="">Leadership & management support </a>
-                                <ul>
-                                    <li><a href="">Business Services</a></li>
-                                    <li><a href="">Curriculum Support</a></li>
-                                    <li><a href="">Governance</a></li>
-                                    <li><a href="">Human Resources</a></li>
-                                    <li><a href="">Schools Finance</a></li>
-                                    <li><a href="">Safeguarding Support</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">Borough-wide strategies</a>
-                                <ul>
-                                    <li><a href="">Business Services</a></li>
-                                    <li><a href="">Curriculum Support</a></li>
-                                    <li><a href="">Governance</a></li>
-                                    <li><a href="">Human Resources</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">Safeguarding support</a>
-                                <ul>
-                                    <li><a href="">LBusiness Services</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">School Finances</a>
-                            </li>
-                            <li>
-                                <a href="">Premises, Health & Safety</a>
-                            </li>
-                            <li>
-                                <a href="">Strategic Calendar</a>
-                            </li>
-                        </ul>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="assets/images/suntrap-hero-1.jpg, assets/images/suntrap-hero-1.jpg 2x,"> <!-- normal and x2 retina image -->
+            <source media="(max-width: 480px)" srcset="assets/images/suntrap-hero-1.jpg"> <!--  mobile image -->
+            <img class="hero-img" src="assets/images/suntrap-hero-1.jpg" alt="Suntrap centre" role="presentation"/> <!-- fallback image -->
+        </picture>
+
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <p>Newsletter <a href="#sign-up-form">sign up</a></p>
+        </div>
+
+        <div class="content abs-content hero-content">
+            <h1>Forest Education
+                <span class="subhead">51 years of learning in Epping Forest</span>
+            </h1>
+            <a href="" class="btn link-btn find-out-more">Find out more</a>
+
+            <a href="#" class="go-down"></a>
+        </div>
+
+    </section>
+
+    <section class="intro">
+
+        <div class="content intro-content fixed-width-content">
+            <div class="inner">
+                <p>
+                    Since 1967, Suntrap has welcomed primary schools, secondary schools, sixth form colleges, nurseries,
+                    children centres and family groups to explore the natural environment within Epping Forest under the
+                    guidance of our qualified, expert staff.
+                    A visit to the centre is not only great value, but something you’ll value now and for years to come.
+                    So come on over and enjoy the great outdoors on your doorstep.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="feature-tiles">
+
+        <div class="content fixed-width-content">
+
+            <div class="tile-container">
+
+                <div class="tile schools-groups orange">
+                    <div href="" class="tile-inner">
+                        <div class="content">
+                            <i class="tile-icon"></i>
+                            <h2>Schools & Youth Groups</h2>
+                        </div>
+                        <div class="content-over">
+                            <p>
+                                Dolor sit amet, consectetur adipisicing elit, sed do cos eiusmod tempor incididunt ut
+                                labore et dolore magna
+                            </p>
+                            <a href="#" class="btn link-btn find-out-more">Find out more</a>
+                        </div>
                     </div>
-                </li>
-                <li><a href="">Governors</a></li>
-                <li><a href="">Leaders</a></li>
-                <li><a href="">Teaching Staff</a></li>
-                <li><a href="">Support Staff</a></li>
-                <li class="hidden-lg-up user-menu">
-                    <ul>
-                        <li><a href="">Login</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Contact us</a></li>
-                        <li><a href="">Training and Events</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                </div>
 
-    </div>
-
-    <div class="content-wrapper ">
-
-        <section class="dynamic-row mob-col">
-
-            <div class="size1of2 mob1of1 block image-block">
-
-                <a href="#" class="image-link-block">
-
-                    <picture>
-                        <source media="(min-width: 1280px)" srcset="assets/images/dynamic-img-1.jpg, assets/images/dynamic-img-1.jpg 2x,">  <!--normal and x2 retina image-->
-                        <source media="(max-width: 480px)" srcset="assets/images/dynamic-img-1.jpg">   <!--mobile image-->
-                        <img src="assets/images/dynamic-img-1.jpg" alt=""> <!--fallback image-->
-                    </picture>
-                    <div class="block-inner-content">
-                        <h2>Latest Policy Updates</h2>
+                <div class="tile families mustard">
+                    <div href="" class="tile-inner">
+                        <div class="content">
+                            <i class="tile-icon"></i>
+                            <h2>Families & Children</h2>
+                        </div>
+                        <div class="content-over">
+                            <p>
+                                Dolor sit amet, consectetur adipisicing elit, sed do cos eiusmod tempor incididunt ut
+                                labore et dolore magna
+                            </p>
+                            <a href="#" class="btn link-btn find-out-more">Find out more</a>
+                        </div>
                     </div>
+                </div>
+
+                <div class="tile adults-corporate yellow">
+                    <div href="" class="tile-inner">
+                        <div class="content">
+                            <i class="tile-icon"></i>
+                            <h2>Adults & Corporate</h2>
+                        </div>
+                        <div  class="content-over">
+                            <p>
+                                Dolor sit amet, consectetur adipisicing elit, sed do cos eiusmod tempor incididunt ut
+                                labore et dolore magna
+                            </p>
+                            <a href="#" class="btn link-btn find-out-more">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="slider">
+
+        <div class="content fixed-width-content">
+
+            <div class="flexslider">
+
+                <ul class="slides">
+
+                    <li class="slide slide1">
+                        <div class="slide-content">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="assets/images/slide-1-img.jpg, assets/images/slide-1-img.jpg 2x,"> <!-- normal and x2 retina image -->
+                                <source media="(max-width: 480px)" srcset="assets/images/slide-1-img.jpg"> <!--  mobile image -->
+                                <img class="slide-content-img" src="assets/images/slide-1-img.jpg" alt="Suntrap centre" role="presentation"/> <!-- fallback image -->
+                            </picture>
+                            <div class="inner-content">
+                                <h2>
+                                    7 Acres of fields
+                                    and garden habitat
+                                </h2>
+                                <a href="" class="btn brand-btn find-out-more">More about our facilities</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="slide slide2">
+                        <div class="slide-content">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="assets/images/slide-2-img.jpg, assets/images/slide-2-img.jpg 2x,"> <!-- normal and x2 retina image -->
+                                <source media="(max-width: 480px)" srcset="assets/images/slide-2-img.jpg"> <!--  mobile image -->
+                                <img class="slide-content-img" src="assets/images/slide-2-img.jpg" alt="Suntrap centre" role="presentation"/> <!-- fallback image -->
+                            </picture>
+                            <div class="inner-content">
+                                <h2>
+                                    7 Acres of fields
+                                    and garden habitat
+                                </h2>
+                                <a href="" class="btn brand-btn find-out-more">More about our facilities</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+            <script>
+				$('.slider .flexslider').flexslider(
+					{
+						animation: "fade",
+						pauseOnAction: true,
+						pauseOnHover: true,
+						useCSS: true,
+						touch: true,
+						slideshow: true,
+						slideshowSpeed: 6000
+					}
+				);
+            </script>
+
+        </div>
+
+    </section>
+
+    <section class="connect">
+
+        <div class="connect-content content fixed-width-content">
+
+            <div class="connect-details flex-item">
+
+                <div class="inner">
+
+                    <h2>Find us</h2>
+                    <p>
+                        <span>Suntrap,</span>
+                        <span>Church Road,</span>
+                        <span>High Beach,</span>
+                        <span>Loughton,</span>
+                        <span>Essex, IG10 4AJ</span>
+                    </p>
+
+                    <p>
+                        <span>Telephone</span>
+                        <span>020 8508 0611</span>
+                    </p>
+
+                    <a href="#" class="btn link-btn contact-us">Contact us</a>
+
+                </div>
+
+            </div>
+
+            <div class="map-wrapper flex-item">
+
+                <div id="map" class="map" style="position: relative; overflow: hidden;">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="feature-links">
+
+        <div class="content feature-links-content fixed-width-content">
+
+            <div class="link-box">
+                <a href="" class="link-box-link" title="Meet the team">
+                    <img src="assets/images/link-box-team-img.jpg" role="presentation" alt="Meet the team">
+                    <h3>
+                        Meet the team
+                    </h3>
                 </a>
-
+            </div>
+            <div class="link-box">
+                <a href="" class="link-box-link" title="Meet the animals">
+                    <img src="assets/images/link-box-animals-img.jpg" role="presentation" alt="Meet the animals">
+                    <h3>
+                        Meet the animals
+                    </h3>
+                </a>
+            </div>
+            <div class="link-box">
+                <a href="" class="link-box-link" title="Camping">
+                    <img src="assets/images/link-box-camping-img.jpg" role="presentation" alt="Camping">
+                    <h3>
+                        Camping
+                    </h3>
+                </a>
             </div>
 
-            <div class="size1of2 mob1of1 block">
+        </div>
 
-                <div class="dynamic-row">
-                    <div class="size1of2 block image-block">
-                        <a href="" class="image-link-block block">
-                            <picture>
-                                <source media="(min-width: 1280px)" srcset="assets/images/dynamic-img-sml-2.jpg, assets/images/dynamic-img-sml-2.jpg 2x,">  <!--normal and x2 retina image-->
-                                <source media="(max-width: 480px)" srcset="assets/images/dynamic-img-sml-2.jpg">   <!--mobile image-->
-                                <img src="assets/images/dynamic-img-sml-2.jpg" alt=""> <!--fallback image-->
-                            </picture>
-                            <div class="block-inner-content">
-                                <h2>2019 Primary PGCE Recruitment Fair</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="size1of2 block">
-                        <a href="" class="block link-block brandDkBlueBg">
-                            <div class="block-inner-content">
-                                <h2>A* and A grades at A-level rise to 26.4%</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="dynamic-row">
-                    <div class="size1of2 block">
-                        <a href="" class="block link-block brandGreenBg">
-                            <div class="block-inner-content">
-                                <h2>Walthamstow London Borough of Culture 2019 Film events</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="size1of2 block image-block">
-                        <a href="" class="image-link-block block">
-                            <picture>
-                                <source media="(min-width: 1280px)" srcset="assets/images/dynamic-img-sml-3.jpg, assets/images/dynamic-img-sml-3.jpg 2x,">  <!--normal and x2 retina image-->
-                                <source media="(max-width: 480px)" srcset="assets/images/dynamic-img-sml-3.jpg">   <!--mobile image-->
-                                <img src="assets/images/dynamic-img-sml-3.jpg" alt=""> <!--fallback image-->
-                            </picture>
-                            <div class="block-inner-content">
-                                <h2>Child Protection scheme</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="audience-grid">
-
-            <div class="audience-content">
-
-                <div class="childcare block">
-                    <a href="" class="block link-block brandLtBlueBg">
-                        <div class="block-inner-content">
-                            <h2>Early Years or Childcare Provider</h2>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="leader block">
-                    <a href="" class="block link-block brandPinkBg">
-                        <div class="block-inner-content">
-                            <h2>Senior Leader</h2>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="governor block">
-                    <a href="" class="block link-block brandPinkBg">
-                        <div class="block-inner-content">
-                            <h2>Governor</h2>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="teachers block">
-                    <a href="" class="block link-block brandGreenBg">
-                        <div class="block-inner-content">
-                            <h2>Teaching Staff</h2>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="support block">
-                    <a href="" class="block link-block brandLtBlueBg">
-                        <div class="block-inner-content">
-                            <h2>Support Staff</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="two-col">
-
-            <div class="two-col-content fixed-width-content">
-
-                <div class="double-col">
-
-                    <h2 class="section-title">Key dates in 2019</h2>
-
-                    <ul class="date-list">
-                        <li>
-                            <a href="">
-                                <p>Jan 4</p>
-                                <p>Back to school</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p>Jan 16</p>
-                                <p>Application form for recruiting school staff deadline</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p>Jan 22</p>
-                                <p>Need-to-know: Rules for new Y4 times tables check published</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p>Feb 3</p>
-                                <p>London Borough of Culture events kick off </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p>Feb 7</p>
-                                <p>Meet Mercury Award-winning Leytonstone-born Talvin Singh</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p>Feb 26</p>
-                                <p>Teaching School Alliance programme</p>
-                            </a>
-                        </li>
-                    </ul>
-
-
-
-                </div>
-
-                <div class="single-col">
-
-                    <img src="assets/images/right-col-img.jpg" role="presentation" alt="">
-
-                    <div class="quote-wrapper">
-
-                        <p class="quote">
-                            A good education is the greatest gift you can give yourself or anyone else”
-                        </p>
-
-                        <p class="attributed">
-                            Mahtab Narsimhan, Author
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="signup-frm brandLtBlueBg">
-
-            <div class="signup-frm-content fixed-width-content">
-
-                <div class="form-intro">
-
-                    <p>
-                        Find out more about accessing our enhanced service areas?
-                    </p>
-                </div>
-
-                <form action="" class="signup-form">
-
-                    <div class="form-item name">
-                        <input type="text" placeholder="Name">
-                    </div>
-                    <div class="form-item select">
-                        <select name="" id="">
-                            <option>Leadership and management</option>
-                            <option>option 2</option>
-                            <option>option 3</option>
-                            <option>option 4</option>
-                            <option>option 5</option>
-                        </select>
-                    </div>
-                    <div class="form-item email">
-                        <input type="text" placeholder="Email">
-                    </div>
-                    <div class="form-actions button">
-                        <input type="submit" value="Sign up">
-                    </div>
-
-                </form>
-
-                <div class="privacy">
-                    <p>
-                        Please see our <a href="">privacy policy</a> for more details
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="link-box-row">
-
-            <div class="link-box-row-content">
-
-                <div class="about-us link-block">
-                    <a href="" class="block link-block brandLtBlueBg">
-                        <div class="block-inner-content">
-                            <h2>About us</h2>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="wf-trade-services link-block">
-                    <a href="" class="block link-block brandPinkBg">
-                        <div class="block-inner-content">
-                            <h2>WF Trade Services</h2>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="get-in-touch link-block">
-                    <a href="" class="block link-block brandGreenBg">
-                        <div class="block-inner-content">
-                            <h2>Get in Touch</h2>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-        </section>
-
-    </div>
+    </section>
 
     <footer>
 
-        <div class="footer-content">
+        <div class="footer-grid content footer-content fixed-width-content">
 
-            <div class="sign-up-social">
+            <div class="cell sign-up">
 
-                <form action="" class="sign-up-form">
-                    <div class="form-item">
-                        <input type="text" placeholder="Sign up to Newsletter">
-                    </div>
-                    <div class="form-actions">
-                        <input type="submit">
-                    </div>
-                </form>
-
-                <div class="social">
-                    <a href="">
-                        <i class="fa fa-twitter"></i>
+                <div class="inner">
+                    <a href="" class="btn link-btn sign-up">
+                        Sign up to Newsletter
                     </a>
                 </div>
 
+                <!--<p class="sign-up">
+                    Sign up to Newsletter
+                </p>
+                <form action="" id="sign-up-form">
+                    <div class="form-item">
+                        <input title="email" placeholder="Enter your email" type="text">
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit" value="">
+                    </div>
+                </form>-->
+
             </div>
 
-            <div class="footer-nav">
-                
+            <div class="cell social">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+
+            <div class="cell footer-nav">
                 <nav>
+
                     <ul>
-                        <li><a href="">Privacy policy</a></li>
-                        <li><a href="">Accessibility </a></li>
+                        <li>
+                            <a href="#">Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
                     </ul>
+
                 </nav>
             </div>
-
-            <div class="copy">
-                <p>
-                    &copy; 2019 Waltham Forest Council. All rights reserved.
-                </p>
+            <div class="cell copyright">
+                <p>© 2018 Lonbon Borough of Waltham Forest</p>
             </div>
-
-            <div class="partner-logo">
-                <div class="logo">
-                    <a href="#" class="traded-services-logo"></a>
-                </div>
-            </div>
-
-            <div class="wf-logo">
-                <div class="logo">
-                    <a href="#" class="wf-logo"></a>
-                </div>
+            <div class="cell logos">
+                <a href="#" class="wf-logo"></a>
+                <a href="#" class="traded-services-logo"></a>
             </div>
 
         </div>
@@ -468,7 +403,6 @@
     </footer>
 </div>
 
-
-
 </body>
+
 </html>

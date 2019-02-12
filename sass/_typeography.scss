@@ -4,40 +4,27 @@
 *
 *****************************************/
 
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+$brandFont: Arial, Helvetica, sans-serif;
 
-// TODO: following font files to be removed when licence obtained to use Adobe fonts CDN
-
-@font-face {
-  font-family: 'FS Elliot';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Myriad Pro Regular'), local('Myriad-Pro-Regular'), url('#{$pathToFonts}/fs-elliot-regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'FS Elliot';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Myriad Pro Bold'), local('Myriad-Pro-Bold'), url('#{$pathToFonts}/fs-elliot-bold.woff2') format('woff2');
-}
-
-
-
-
-$FS-Elliot-font: 'FS Elliot', sans-serif;
-.fs-elliot-pro-font {font-family: $FS-Elliot-font};
-
-
-
-$sourceSansPro: 'sans-serif';
 
 //font weights
+$extraLight:200;
+$light:     300;
 $regular:   400;
+$medium:    500;
+$semiBold:  600;
 $bold:      700;
 
 
+.extra-light      {font-weight: $extraLight;}
+
+.light            {font-weight: $light}
+//.light-italic     {font-weight: $light;font-style: italic;}
 .regular          {font-weight: $regular;}
+//.regular-italic   {font-weight: $regular;font-style: italic;}
+.semi-bold        {font-weight: $semiBold;}
+//.semi-bold-italic {font-weight: $semiBold;font-style: italic;}
+.medium           {font-weight: $medium;}
 .bold             {font-weight: $bold;}
 
 .centre {text-align: center}

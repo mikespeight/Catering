@@ -11,22 +11,23 @@ $black: #000;
 .black {color: $black}
 
 //Brand colours
-$brandDkBlue: #273667; //RGB 129, 181, 194 243968
-$brandPrimary: $brandDkBlue;
-.brandDkBlue {  color: $brandDkBlue;}
+$brandGreen: #78BE20; //RGB 120, 190, 132
+$brandPrimary: $brandGreen;
+.brandGreen {  color: $brandGreen;}
 
-$brandLtBlue: #00abbd; //RGB 186, 114, 51
-$brandSecondary: $brandLtBlue;
-.brandLtBlue { color: $brandLtBlue}
+$brandDkGreen: #2C5234; //RGB 186, 114, 51
+$brandSecondary: $brandDkGreen;
+.brandDkGreen { color: $brandDkGreen}
 
-$brandGreen: #50c0af; //RGB 78, 116, 139
-$brandTertiary: $brandGreen;
-.brandGreen {color: $brandGreen}
+$brandLtGreen: #A4D65E; //RGB 164, 214, 94
+$brandTertiary: $brandLtGreen;
+.brandLtGreen {color: $brandLtGreen}
 
-$brandNeonPink: #fd7673; //RGB 253, 118, 115
-$brandQuaternary: $brandNeonPink;
-.brandPink {color: $brandNeonPink;};
+$brandGrey: #3c3c3c; //RGB 60, 60, 60
+$brandQuaternary: $brandGrey;
+.brandGrey {color: $brandGrey;};
 
+// Community colours
 $brandMustard: #fdbd73;
 $brandQuinary:  $brandMustard;
 .brandMustard {color: $brandMustard;}
