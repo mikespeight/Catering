@@ -23,65 +23,56 @@ $brandLtGreen: #A4D65E; //RGB 164, 214, 94
 $brandTertiary: $brandLtGreen;
 .brandLtGreen {color: $brandLtGreen}
 
-$brandGrey: #3c3c3c; //RGB 60, 60, 60
-$brandQuaternary: $brandGrey;
-.brandGrey {color: $brandGrey;};
+$brandDkGrey: #3c3c3c; //RGB 60, 60, 60
+$brandQuaternary: $brandDkGrey;
+.brandDkGrey {color: $brandDkGrey;};
 
 // Community colours
-$brandMustard: #fdbd73;
-$brandQuinary:  $brandMustard;
-.brandMustard {color: $brandMustard;}
+$communityDkPink: #D00058; //RGB 208 0 88
+$communityPrimary:  $communityDkPink;
+.communityDkPink{color: $communityDkPink;}
 
-$accentGrey: #30333f; //RGB 41, 40, 42
-.accentGrey {color: $accentGrey}
+$communityLtPink: #F7C2D1; //RGB 247 194 209
+$communityPrimary:  $communityLtPink;
+.communityLtPink{color: $communityLtPink;}
 
-$accentSilver: #c0c0c0; //RGB 192, 192, 192
-.accentSilver {color: $accentSilver}
+//PriSch colours
+$priSchGreen: #C2D500;
+$priSchPrimary: $priSchGreen;
+.priSchGreen{color: $priSchGreen;}
+
+$priSchDkPink: #AE1065;
+$priSchSecondary: $priSchDkPink;
+.priSchDkPink {color: $priSchDkPink}
+
+$priSchMauve: #682575;
+$priSchTertiary: $priSchMauve;
+.priSchMauve {color: $priSchMauve}
+
+$priSchMauve: #682575;
+$priSchQuaternary: $priSchMauve;
+.priSchMauve {color: $priSchMauve}
+
+$priSchDkGreen: #294634;
+$priSchQuinary: $priSchDkGreen;
+.priSchDkGreen {color: $priSchDkGreen}
+
+//SecSch colours
+$secSchOrange: #E9540D;
+$secSchPrimary: $secSchOrange;
+.secSchOrange {color: $secSchOrange}
+
+$secSchLtOrange: #FCCB8C;
+$secSchSecondary: $secSchLtOrange;
+.secSchLtOrange {color: $secSchLtOrange}
+
+$secSchMauve: #652F6C;
+$secSchTertiary: $secSchMauve;
+.secSchMauve {color: $secSchMauve}
 
 
 //backgrounds
 $white75: rgba(255,255,255,0.75);
-$accentBlue85: rgba(78, 116, 139, 0.85);
-
-.brandDkBlueBg {
-  background-color: $brandDkBlue;
-}
-
-.brandDkBlueBgTrans {
-  background-color: rgba(36, 57, 104, 0.85);
-}
-
-.brandLtBlueBg {
-  background-color: $brandLtBlue;
-}
-
-.brandLtBlueBgTrans {
-  background-color: rgba(19, 172, 189, 0.85);
-}
-
-.brandGreenBg {
-  background-color: $brandGreen;
-}
-
-.brandGreenBgTrans {
-  background-color: rgba(75, 193, 176, 0.85);
-}
-
-.brandPinkBg {
-  background-color: $brandNeonPink;
-}
-
-.brandPinkBgTrans {
-  background-color: rgba(253, 118, 115,0.85);
-}
-
-.brandMustardBg {
-  background-color: $brandMustard;
-}
-
-.brandMustardBgTrans {
-  background-color: rgba(253, 189, 115,0.85);
-}
 
 .whiteBg {
   background-color: $white;
@@ -172,5 +163,5 @@ $lt-grey:  #f1f1f1;
 $lt-grey-bg:  #eeeeee;
 
 // text colours
-$txtColour: $brandDkBlue;
+$txtColour: $brandDkGrey;
 $text-color: $txtColour;

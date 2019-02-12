@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  font-family: $FS-Elliot-font;
+  font-family: $brandFont;
   font-weight: $regular;
   color: $txtColour;
   @include font-size(14);
@@ -29,7 +29,7 @@ body {
 }
 
 a {
-  color: $brandLtBlue;
+  color: $white;
   text-decoration: none;
 
   &:hover {
@@ -45,20 +45,20 @@ a {
     @include font-size(18);
     font-weight: $regular;
     @include border-radius(6px);
-    border: 2px solid $brandLtBlue;
-    color: $brandLtBlue;
+    border: 2px solid $white;
+    color: $white;
     line-height: 45px;
     text-decoration: none;
     text-align: center;
     transition: all 0.5s ease-in-out;
 
     &.primary-btn {
-      border: 2px solid $brandLtBlue;
-      color: $brandLtBlue;
+      border: 2px solid $white;
+      color: $white;
       position: relative;
 
       &:hover {
-        background-color: $brandLtBlue;
+        background-color: $white;
         color: $white;
       }
 
@@ -86,8 +86,8 @@ a {
     }
 
     &.secondary-btn {
-      border: 2px solid $brandDkBlue;
-      color: $brandDkBlue;
+      border: 2px solid $brandSecondary;
+      color: $brandSecondary;
 
       &.next {
 
@@ -112,7 +112,7 @@ a {
       }
 
       &:hover {
-        background-color: $brandDkBlue;
+        background-color: $brandSecondary;
         color: $white;
       }
     }

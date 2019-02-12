@@ -15,7 +15,7 @@ section {
     &.wysiwyg {
       display: block!important;
       padding:60px 0 40px;
-      font-family: $FS-Elliot-font;
+      font-family: $brandFont;
       font-weight: $regular;
 
       a {
@@ -43,7 +43,7 @@ section {
       }
 
       h3 {
-        color: $brandDkBlue;
+        color: $brandSecondary;
         @include font-size(18);
         font-weight: $bold;
         margin-bottom: 0;
@@ -73,7 +73,7 @@ section {
           display: block;
           width: 6px;
           height: 6px;
-          background-color: $brandLtBlue;
+          background-color: $brandSecondary;
           @include border-radius(3px);
         }
       }
@@ -121,7 +121,7 @@ section {
             height: 44px;
             width: 44px;
             @include border-radius(22px);
-            color: $brandLtBlue;
+            color: $brandSecondary;
             background-color: transparent;
             @include font-size(20);
             font-weight: $regular;

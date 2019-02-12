@@ -2,7 +2,7 @@
 // How can we help form
 .contact-us-form {
   height:770px;
-  background: $brandLtBlue;
+  background: $brandSecondary;
   margin-bottom: 0;
 
   h2 {
@@ -69,7 +69,7 @@
 
     input[type="submit"]{
       color: $white;
-      background: $brandDkBlue;
+      background: $brandSecondary;
       display: inline-block;
       height:38px;
       @include font-size(21);

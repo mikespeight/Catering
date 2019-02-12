@@ -30,13 +30,13 @@ $bold:      700;
 .centre {text-align: center}
 
 h1{
-  font-family: $FS-Elliot-font;
+  font-family: $brandFont;
   font-weight: $regular;
   @include font-size(65);
 }
 
 h2 {
-  font-family: $FS-Elliot-font;
+  font-family: $brandFont;
   font-weight: $regular;
   @include font-size(45);
 
@@ -79,7 +79,7 @@ h2 {
       bottom:0;
       left:50%;
       transform: translateX(-50%);
-      background-color: $brandLtBlue;
+      background-color: $white;
     }
   }
 }

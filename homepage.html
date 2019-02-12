@@ -30,6 +30,7 @@
 
     <script src="assets/js/modernizr/modernizr.js" type="text/javascript" language="JavaScript"></script>
     <script src="assets/components/jquery/dist/jquery.min.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/components/bootstrap4/dist/js/bootstrap.min.js" type="text/javascript" language="JavaScript"></script>
     <script src="assets/components/flexslider-scss/jquery.flexslider.js" type="text/javascript" language="JavaScript"></script>
     <script src="assets/js/catering.js" type="text/javascript" language="JavaScript"></script>
 
@@ -45,7 +46,7 @@
         <section class="top-nav max-width-content">
 
             <nav class="navbar navbar-expand-lg">
-                <!--<a class="navbar-brand suntrap-logo" href="#">Suntrap centre</a>-->
+                <a class="navbar-brand brand-logo" href="#">Waltham Forest Catering</a>
 
                 <div class="collapse navbar-collapse " id="collapsibleNavbar">
                     <ul class="navbar-nav ml-auto">
@@ -105,9 +106,9 @@
     <section class="hero">
 
         <picture>
-            <source media="(min-width: 1200px)" srcset="assets/images/suntrap-hero-1.jpg, assets/images/suntrap-hero-1.jpg 2x,"> <!-- normal and x2 retina image -->
-            <source media="(max-width: 480px)" srcset="assets/images/suntrap-hero-1.jpg"> <!--  mobile image -->
-            <img class="hero-img" src="assets/images/suntrap-hero-1.jpg" alt="Suntrap centre" role="presentation"/> <!-- fallback image -->
+            <source media="(min-width: 1200px)" srcset="assets/images/hero-img.jpg, assets/images/hero-img.jpg 2x,"> <!-- normal and x2 retina image -->
+            <source media="(max-width: 480px)" srcset="assets/images/hero-img.jpg"> <!--  mobile image -->
+            <img class="hero-img" src="assets/images/hero-img.jpg" alt="Suntrap centre" role="presentation"/> <!-- fallback image -->
         </picture>
 
         <div class="social">
@@ -406,3 +407,21 @@
 </body>
 
 </html>
+
+<!-- Javascript for bootstrap dropdown menus to work on hover -->
+<script>
+	jQuery(function($) {
+		$('.navbar .dropdown').hover(function() {
+			$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+		}, function() {
+			$(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+		});
+
+		$('.navbar .dropdown > a').click(function(){
+			location.href = this.href;
+		});
+
+	});
+</script>
