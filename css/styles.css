@@ -6498,66 +6498,6 @@ a.text-dark:hover, a.text-dark:focus {
   flex-direction: row;
   justify-content: space-between; }
 
-/*************************************************
-
-    =Reset Styles Begin
-
-**************************************************/
-html {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1.5;
-  background: white; }
-
-table {
-  border-collapse: separate;
-  border-spacing: 0; }
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  float: none !important; }
-
-table, th, td {
-  vertical-align: middle; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: ''; }
-
-blockquote, q {
-  quotes: "" ""; }
-
-a img {
-  border: none; }
-
-:focus {
-  outline: 0; }
-
-img.full {
-  max-width: 100%;
-  display: block; }
-
-ol, ul {
-  list-style: none; }
-
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -9061,16 +9001,17 @@ body.user-logged-in.toolbar-tray-open header {
 *
 *****************************************/
 html {
-  font-size: 10px; }
-
-html,
-body {
+  font-size: 10px;
+  box-sizing: border-box;
   width: 100%;
-  overflow-x: hidden;
   margin: 0;
-  padding: 0;
-  border: 0; }
+  padding: 0; }
 
+/*html,
+body {
+  width:100%;
+  overflow-x: hidden;
+}*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -9080,82 +9021,94 @@ body {
   body > section {
     overflow: hidden; }
 
-a {
-  color: #fff;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
-  a.btn {
-    display: inline-block;
-    padding: 0 50px;
-    height: 45px;
-    min-width: 220px;
-    font-size: 18px;
-    font-size: 1.8rem;
-    font-weight: 400;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border: 2px solid #fff;
-    color: #fff;
-    line-height: 45px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.5s ease-in-out; }
-    a.btn.primary-btn {
-      border: 2px solid #fff;
-      color: #fff;
-      position: relative; }
-      a.btn.primary-btn:hover {
-        background-color: #fff;
-        color: #fff; }
-      a.btn.primary-btn.next:after {
-        font-family: FontAwesome;
-        content: '\f054';
-        position: absolute;
-        right: 10px;
-        top: 0; }
-      a.btn.primary-btn.prev:before {
-        font-family: FontAwesome;
-        content: '\f053';
-        position: absolute;
-        left: 10px;
-        top: 0; }
-    a.btn.secondary-btn {
-      border: 2px solid #2C5234;
-      color: #2C5234; }
-      a.btn.secondary-btn.next:after {
-        font-family: FontAwesome;
-        content: '\f054';
-        position: absolute;
-        right: 10px;
-        top: 0; }
-      a.btn.secondary-btn.prev:before {
-        font-family: FontAwesome;
-        content: '\f053';
-        position: absolute;
-        left: 40px;
-        top: 0; }
-      a.btn.secondary-btn:hover {
-        background-color: #2C5234;
-        color: #fff; }
+#UserAgent {
+  display: none; }
 
-.btn-wrapper {
-  position: relative;
-  padding: 36px 0;
-  margin-bottom: 30px; }
-  .btn-wrapper.centred a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .btn-wrapper.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 0 36px; }
-    .btn-wrapper.row > a {
-      margin-right: 25px; }
+a,
+button {
+  display: block;
+  outline: none; }
+  a.btn,
+  button.btn {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    border-radius: 8px !important; }
+    a.btn.link-btn,
+    button.btn.link-btn {
+      height: 44px;
+      border: 2px solid #fff;
+      margin: 20px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      font-size: 1.8rem;
+      color: #fff;
+      line-height: 38px;
+      text-align: center;
+      transition: all 0.5s ease-in-out; }
+      a.btn.link-btn.inverse,
+      button.btn.link-btn.inverse {
+        border-color: #000;
+        color: #000; }
+      a.btn.link-btn.primary,
+      button.btn.link-btn.primary {
+        background-color: transparent;
+        border-color: #78BE20;
+        color: #78BE20; }
+    a.btn.brand-btn,
+    button.btn.brand-btn {
+      background-color: #78BE20;
+      border: 1px solid #78BE20;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.0055rem;
+      font-size: 18px;
+      font-size: 1.8rem;
+      transition: all 0.5s ease-in-out; }
+      a.btn.brand-btn.brand-red,
+      button.btn.brand-btn.brand-red {
+        background-color: #A4D65E;
+        border-color: #A4D65E; }
+      a.btn.brand-btn.brand-reverse,
+      button.btn.brand-btn.brand-reverse {
+        background-color: transparent;
+        border-color: #78BE20;
+        color: #78BE20; }
+    a.btn.wide-btn,
+    button.btn.wide-btn {
+      padding: 0 100px; }
+  a:hover.btn.brand-btn,
+  button:hover.btn.brand-btn {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #78BE20; }
+    a:hover.btn.brand-btn.brand-red,
+    button:hover.btn.brand-btn.brand-red {
+      border-color: #A4D65E;
+      background-color: #A4D65E;
+      color: #fff; }
+    a:hover.btn.brand-btn.brand-reverse,
+    button:hover.btn.brand-btn.brand-reverse {
+      border-color: #fff;
+      background-color: #78BE20;
+      color: #fff; }
+  a:hover.btn.link-btn,
+  button:hover.btn.link-btn {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #78BE20; }
+    a:hover.btn.link-btn.inverse,
+    button:hover.btn.link-btn.inverse {
+      background-color: #78BE20;
+      border: 1px solid #78BE20;
+      color: #fff; }
+    a:hover.btn.link-btn.primary,
+    button:hover.btn.link-btn.primary {
+      background-color: #78BE20;
+      border-color: #78BE20;
+      color: #fff; }
 
 /*
  * jQuery FlexSlider v2.2.0
@@ -10175,13 +10128,13 @@ body.homepage .hero {
   body.homepage .hero .hero-content {
     color: #fff;
     width: 100%;
+    padding: 0 36px;
     height: 100%; }
     body.homepage .hero .hero-content h1 {
-      width: 500px;
+      width: 100%;
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 306px; }
+      top: 306px;
+      left: 50px; }
       body.homepage .hero .hero-content h1 .subhead {
         margin-top: -3px;
         display: block;
@@ -10189,8 +10142,7 @@ body.homepage .hero {
         font-size: 3rem; }
     body.homepage .hero .hero-content .find-out-more {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 50px;
       top: 442px; }
     body.homepage .hero .hero-content .go-down {
       position: absolute;
@@ -11137,6 +11089,7 @@ body .one-col .one-col-content {
 body footer {
   margin-top: 30px;
   min-height: 267px;
+  background-color: #3c3c3c;
   color: #fff; }
   body footer .footer-grid.footer-content {
     display: grid;

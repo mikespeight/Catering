@@ -6,16 +6,17 @@
 
 html {
   font-size: $baseFontSize;
+  box-sizing: border-box;
+  width:100%;
+  margin:0;
+  padding: 0;
 }
 
-html,
+/*html,
 body {
   width:100%;
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+}*/
 
 body {
   font-family: $brandFont;
@@ -26,117 +27,119 @@ body {
   & > section {
     overflow: hidden;
   }
+
 }
 
-a {
-  color: $white;
-  text-decoration: none;
+#UserAgent {
+  display: none;
+}
 
-  &:hover {
-    text-decoration: underline;
-  }
+a,
+button {
+  display: block;
+  outline: none;
 
   &.btn {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    border-radius: 8px!important;
 
-    display: inline-block;
-    padding:  0 50px;
-    height: 45px;
-    min-width: 220px;
-    @include font-size(18);
-    font-weight: $regular;
-    @include border-radius(6px);
-    border: 2px solid $white;
-    color: $white;
-    line-height: 45px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
 
-    &.primary-btn {
+    &.link-btn {
+      height: 44px;
       border: 2px solid $white;
+      margin:20px 0;
+      font-family: $brandFont;
+      font-weight: $regular;
+      @include font-size(18);
       color: $white;
-      position: relative;
+      line-height: 38px;
+      text-align: center;
+      transition: all 0.5s ease-in-out;
 
-      &:hover {
+      &.inverse {
+        border-color: $black;
+        color: $black;
+      }
+
+      &.primary {
+        background-color: transparent;
+        border-color: $brandPrimary;
+        color: $brandPrimary;
+      }
+    }
+
+
+    &.brand-btn {
+      background-color: $brandPrimary;
+      border:1px solid $brandPrimary;;
+      color: $white;
+      font-family: $brandFont;
+      font-weight: $regular;
+      letter-spacing: 0.0055rem;
+      @include font-size(18);
+      transition: all 0.5s ease-in-out;
+
+      &.brand-red {
+        background-color: $brandTertiary;
+        border-color: $brandTertiary;
+      }
+
+      &.brand-reverse {
+        background-color: transparent;
+        border-color: $brandPrimary;
+        color: $brandPrimary;
+      }
+    }
+
+    &.wide-btn {
+      padding: 0 100px;
+
+    }
+  }
+
+  &:hover {
+
+    &.btn {
+
+      &.brand-btn {
         background-color: $white;
-        color: $white;
-      }
+        border:1px solid $white;
+        color: $brandPrimary;
 
-      &.next {
+        &.brand-red {
+          border-color: $brandTertiary;
+          background-color: $brandTertiary;
+          color: $white;
+        }
 
-        &:after {
-          font-family: FontAwesome;
-          content: '\f054';
-          position: absolute;
-          right:10px;
-          top: 0;
+        &.brand-reverse {
+          border-color: $white;
+          background-color: $brandPrimary;
+          color: $white;
         }
       }
 
-      &.prev {
+      &.link-btn {
+        background-color: $white;
+        border:1px solid $white;
+        color: $brandPrimary;
 
-        &:before {
-          font-family: FontAwesome;
-          content: '\f053';
-          position: absolute;
-          left:10px;
-          top: 0;
+        &.inverse {
+          background-color: $brandPrimary;
+          border:1px solid $brandPrimary;
+          color: $white;
         }
-      }
-    }
 
-    &.secondary-btn {
-      border: 2px solid $brandSecondary;
-      color: $brandSecondary;
-
-      &.next {
-
-        &:after {
-          font-family: FontAwesome;
-          content: '\f054';
-          position: absolute;
-          right:10px;
-          top: 0;
+        &.primary {
+          background-color: $brandPrimary;
+          border-color: $brandPrimary;
+          color: $white;
         }
-      }
-
-      &.prev {
-
-        &:before {
-          font-family: FontAwesome;
-          content: '\f053';
-          position: absolute;
-          left:40px;
-          top: 0;
-        }
-      }
-
-      &:hover {
-        background-color: $brandSecondary;
-        color: $white;
       }
     }
   }
 }
 
-.btn-wrapper {
-  position: relative;
-  padding: 36px 0;
-  margin-bottom: 30px;
 
-  &.centred {
-
-    a {
-      @include centerer;
-    }
-  }
-
-  &.row {
-    @include flex-container(row, flex-start);
-    padding: 0 36px;
-
-    & > a {
-      margin-right: 25px;
-    }
-  }
-}

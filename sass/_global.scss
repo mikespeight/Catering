@@ -181,12 +181,15 @@ body {
       .hero-content {
         color: $white;
         width: 100%;
+        //max-width: 1200px;
+        padding: 0 36px;
         height: 100%;
 
         h1 {
-          width: 500px;
-          @include centerH;
+          width: 100%;
+          position: absolute;
           top:306px;
+          left:50px;
 
           .subhead {
             margin-top: -3px;
@@ -196,7 +199,8 @@ body {
         }
 
         .find-out-more {
-          @include centerH;
+          position: absolute;
+          left: 50px;
           top: 442px;
         }
 
@@ -1452,7 +1456,7 @@ body {
   footer {
     margin-top: 30px;
     min-height:267px;
-    //background-color: $suntrapBlue;
+    background-color: $brandQuaternary;
     color:$white;
 
     .footer-grid {
