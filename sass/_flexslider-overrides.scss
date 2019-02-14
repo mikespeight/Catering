@@ -18,23 +18,37 @@
 
     a {
       display: block;
-      width: 42px;
-      height: 42px;
+      background-color: $white;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      width: 72px;
+      height: 66px;
+      color: $white;
     }
 
     .flex-prev {
-      background-image: url("#{$pathToImages}/white-arrow-left.png");
-      background-size: 42px 42px;
-      text-indent: 10000px;
+      background-image: url("#{$pathToImages}/green-arrow-left.png");
+      background-size: 11px 18px;
+      left: 0;
+      text-indent: -10000px;
       opacity: 1;
+
+      &:before {
+        content: none;
+      }
     }
 
     .flex-next {
-      background-image: url("#{$pathToImages}/white-arrow-right.png");
-      background-size: 42px 42px;
-      text-indent: 10000px;
+      background-image: url("#{$pathToImages}/green-arrow-right.png");
+      background-size: 11px 18px;
+      right:0;
+      text-indent: -10000px;
       opacity: 1;
       text-align: right;
+
+      &:before {
+        content: none;
+      }
     }
 
     .flex-direction-nav a.flex-prev:before  {

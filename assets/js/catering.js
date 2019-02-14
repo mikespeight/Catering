@@ -6,6 +6,37 @@
 
 /*console.log('loading');*/
 
+function sticky_footer(){
+
+	//console.log('sticky footer');
+
+	var $wrapper = $('body'),
+		$footer = $('.page-footer'),
+		$stickyFooter = $('#sticky__footer'),
+		footerHeight = $footer.height(),
+		stickyFooterHeight = $stickyFooter.height(),
+		pageHeight,
+		windowHeight,
+		scrollHeight,
+		triggerHeight;
+
+	// element fixed on scroll
+	$(document).on("scroll", $wrapper, function(e) {
+
+		pageHeight = $(document).height();
+		windowHeight = $(window).height();
+		scrollHeight = $(document).scrollTop();
+		triggerHeight = pageHeight - footerHeight + stickyFooterHeight;
+
+		if(triggerHeight >= windowHeight + scrollHeight) {
+			$stickyFooter.addClass('fixed');
+		}
+		else {
+			$stickyFooter.removeClass('fixed');
+		}
+	});
+}
+
 function hoverMenus(){
 
 	var timeOutOpen,
@@ -29,7 +60,7 @@ function hoverMenus(){
 		timeOutOpen = setTimeout(function(){
 			$object.addClass('open');
 		}, delay);
-	};
+	}
 
 	function closeMenu(delay, $object){
 		if(timeOutOpen !== null){
@@ -48,7 +79,7 @@ function hoverMenus(){
 			//$(this).stop(true).delay(500).addClass('open');
 		},
 		function(){
-			closeMenu(300, $(this))
+			closeMenu(300, $(this));
 			//$(this).stop(true).delay(500).removeClass('open'); //Jquery ver delay not working
 		}
 	);
@@ -56,6 +87,8 @@ function hoverMenus(){
 
 
 $(document).ready(function() {
+
+	sticky_footer();
 
 	// main menu hover delay
 	hoverMenus();
