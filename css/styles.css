@@ -10011,6 +10011,41 @@ section div.wysiwyg {
       outline: none;
       margin: -20px 0 0 0; }
 
+.feature-tiles .tile-container .tile .tile-inner .tile-icon {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70px;
+  width: 140px;
+  height: 140px;
+  background: transparent url("../assets/images/icon-sprite.png");
+  background-size: 420px 140px; }
+
+.feature-tiles .tile-container .tile.food .tile-icon {
+  background-position: 0 0;
+  position: relative;
+  top: 118px; }
+
+.feature-tiles .tile-container .tile.services .tile-icon {
+  background-position: -140px 0;
+  position: relative;
+  top: 100px; }
+
+.feature-tiles .tile-container .tile.people .tile-icon {
+  background-position: -280px 0;
+  position: relative;
+  top: 105px; }
+
+.feature-tiles .tile-container .tile.secondaryBg {
+  background-color: #2C5234; }
+
+.feature-tiles .tile-container .tile.primaryBg {
+  background-color: #78BE20; }
+
+.feature-tiles .tile-container .tile.quaternaryBg {
+  background-color: #3c3c3c; }
+
 /****************************************
 *
 * Global stylesheet
@@ -10239,16 +10274,6 @@ body .feature-tiles .tile-container {
       width: 100%;
       height: 100%;
       color: #fff; }
-      body .feature-tiles .tile-container .tile .tile-inner .tile-icon {
-        display: block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 70px;
-        width: 140px;
-        height: 140px;
-        background: transparent url("../assets/images/icons-sprite.png");
-        background-size: 700px 1120px; }
       body .feature-tiles .tile-container .tile .tile-inner div {
         position: absolute;
         top: 0;
@@ -10285,90 +10310,6 @@ body .feature-tiles .tile-container {
         left: 50%;
         transform: translateX(-50%);
         bottom: 80px; }
-    body .feature-tiles .tile-container .tile.activites .tile-icon {
-      background-position: 0 0; }
-    body .feature-tiles .tile-container .tile.adults-corporate .tile-icon {
-      background-position: -140px 0; }
-    body .feature-tiles .tile-container .tile.adventure .tile-icon {
-      background-position: -280px 0; }
-    body .feature-tiles .tile-container .tile.bee .tile-icon {
-      background-position: -420px 0; }
-    body .feature-tiles .tile-container .tile.booking-info .tile-icon {
-      background-position: -560px 0; }
-    body .feature-tiles .tile-container .tile.pumpkin .tile-icon {
-      background-position: 0 -140px; }
-    body .feature-tiles .tile-container .tile.campfire .tile-icon {
-      background-position: -140px -140px; }
-    body .feature-tiles .tile-container .tile.camping .tile-icon {
-      background-position: -280px -140px; }
-    body .feature-tiles .tile-container .tile.chicken .tile-icon {
-      background-position: -420px -140px; }
-    body .feature-tiles .tile-container .tile.christmas .tile-icon {
-      background-position: -560px -140px; }
-    body .feature-tiles .tile-container .tile.corporate .tile-icon {
-      background-position: 0 -280px; }
-    body .feature-tiles .tile-container .tile.easter-eggs .tile-icon {
-      background-position: -140px -280px; }
-    body .feature-tiles .tile-container .tile.event .tile-icon {
-      background-position: -280px -280px; }
-    body .feature-tiles .tile-container .tile.whats-on .tile-icon {
-      background-position: -420px -280px; }
-    body .feature-tiles .tile-container .tile.families .tile-icon {
-      background-position: -560px -280px; }
-    body .feature-tiles .tile-container .tile.garden-lantern .tile-icon {
-      background-position: 0 -420px; }
-    body .feature-tiles .tile-container .tile.globe .tile-icon {
-      background-position: -140px -420px; }
-    body .feature-tiles .tile-container .tile.photography .tile-icon {
-      background-position: -280px -420px; }
-    body .feature-tiles .tile-container .tile.play .tile-icon {
-      background-position: -420px -420px; }
-    body .feature-tiles .tile-container .tile.recycle .tile-icon {
-      background-position: -560px -420px; }
-    body .feature-tiles .tile-container .tile.schools-groups .tile-icon {
-      background-position: 0 -560px; }
-    body .feature-tiles .tile-container .tile.support .tile-icon {
-      background-position: -140px -560px; }
-    body .feature-tiles .tile-container .tile.teams .tile-icon {
-      background-position: -280px -560px; }
-    body .feature-tiles .tile-container .tile.team-building .tile-icon {
-      background-position: -420px -560px; }
-    body .feature-tiles .tile-container .tile.learning .tile-icon {
-      background-position: -560px -560px; }
-    body .feature-tiles .tile-container .tile.tour-guide .tile-icon {
-      background-position: 0 -700px; }
-    body .feature-tiles .tile-container .tile.wand .tile-icon {
-      background-position: -140px -700px; }
-    body .feature-tiles .tile-container .tile.wedding .tile-icon {
-      background-position: -280px -700px; }
-    body .feature-tiles .tile-container .tile.wellbeing .tile-icon {
-      background-position: -420px -700px; }
-    body .feature-tiles .tile-container .tile.compass .tile-icon {
-      background-position: -560px -700px; }
-    body .feature-tiles .tile-container .tile.globe .tile-icon {
-      background-position: -140px -840px; }
-    body .feature-tiles .tile-container .tile.gardian .tile-icon {
-      background-position: -280px -840px; }
-    body .feature-tiles .tile-container .tile.magnifying-glass .tile-icon {
-      background-position: -420px -840px; }
-    body .feature-tiles .tile-container .tile.microscope .tile-icon {
-      background-position: 0px -840px; }
-    body .feature-tiles .tile-container .tile.net .tile-icon {
-      background-position: -560px -840px; }
-    body .feature-tiles .tile-container .tile.oak-tree .tile-icon {
-      background-position: 0 -980px; }
-    body .feature-tiles .tile-container .tile.stag-beetle .tile-icon {
-      background-position: -140px -980px; }
-    body .feature-tiles .tile-container .tile.winding-road .tile-icon {
-      background-position: -280px -980px; }
-    body .feature-tiles .tile-container .tile.blank .tile-icon {
-      background-position: -560px -980px; }
-    body .feature-tiles .tile-container .tile.orange {
-      background-color: #2C5234; }
-    body .feature-tiles .tile-container .tile.mustard {
-      background-color: #78BE20; }
-    body .feature-tiles .tile-container .tile.yellow {
-      background-color: #3c3c3c; }
 
 body .slider {
   height: 609px; }
@@ -10426,7 +10367,7 @@ body .connect {
     body .connect .connect-content .connect-details {
       width: 33.333%;
       color: #fff;
-      padding: 0 36px 30px 100px; }
+      padding: 0 3vw 30px 8.333vw; }
       body .connect .connect-content .connect-details h2 {
         font-size: 33px;
         font-size: 3.3rem;
