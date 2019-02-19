@@ -10,14 +10,14 @@
 
 body {
 
-  &:before {
+  /*&:before {
     content: 'std screen down i.e. 1200 to 992';
     position: fixed;
     z-index: 10000;
     top:0;
     left:0;
     background-color: rgba(255, 255, 255, 0.75);
-  }
+  }*/
 
   .booking-form {
 

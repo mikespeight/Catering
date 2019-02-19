@@ -4,12 +4,12 @@
 *
 *****************************************/
 body {
-  &:before {
+  /*&:before {
     content: 'std screen i.e. 1200 and up';
     position: fixed;
     z-index: 10000;
     top:0;
-  }
+  }*/
 }
 
 .fixed-width-content {
@@ -951,6 +951,10 @@ body {
           font-weight: $semiBold;
           @include font-size(18);
           color: $brandPrimary;
+        }
+
+        p {
+          text-align: center;
         }
       }
     }
