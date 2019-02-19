@@ -7,17 +7,111 @@
 *
 *
 *******************************************************************************************/
+@import "../components/mobile-menu";
 
 body {
 
-  /*&:before {
-    content: '992 to 768';
+  &:before {
+    content: 'md screen down i.e. 992 to 768';
     position: fixed;
     z-index: 10000;
     top:0;
-    left:0;
-    background-color: rgba(255, 255, 255, 0.75);
-  }*/
+  }
 
+  &.homepage {
 
+    .hero {
+
+      & + section {
+        margin-top: 702px;
+      }
+    }
+  }
+
+  &.subpage {
+
+    .hero {
+
+      & + section {
+        margin-top: 290px;
+      }
+    }
+  }
+
+  .intro {
+
+    .intro-content {
+
+      .inner {
+        padding: 0 70px 30px;
+      }
+    }
+  }
+
+  .slider {
+
+    .flexslider {
+
+      .slides {
+
+        .slide {
+
+          .slide-content {
+
+            img {
+
+              &.slide-content-img {
+                width: auto;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+
+    .footer-grid {
+
+      &.footer-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 167px 1fr 100px;
+        grid-template-areas: ". logos"
+        "social ."
+        "footer-nav copyright";
+        height: inherit;
+      }
+    }
+
+    .social {
+
+      a {
+        display: inline-block;
+        color: $white;
+        margin-right: 16px;
+
+        .fa {
+          @include font-size(30);
+        }
+
+        &:nth-child(4){
+          margin-right: 0;
+        }
+      }
+    }
+
+    .copyright {
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    .logos {
+
+      a {
+        bottom:70px!important;
+      }
+    }
+  }
 }

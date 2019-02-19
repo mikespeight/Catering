@@ -4,22 +4,20 @@
 *
 *****************************************/
 body {
-  /*&:before {
-    content: 'std screen i.e. 1280 and up';
+  &:before {
+    content: 'std screen i.e. 1200 and up';
     position: fixed;
     z-index: 10000;
     top:0;
-    left:0;
-    background-color: rgba(255, 255, 255, 0.75);
-  }*/
+  }
 }
-
 
 .fixed-width-content {
   max-width:$constrainedWidth;
   padding: 0;
   margin: 0 auto;
 }
+
 .flexible-content {
   margin: 0 3vw;
 }
@@ -482,14 +480,14 @@ body {
 
       .contact-form {
         width: 66.666%;
-        padding-right: 30px;
+        padding-right: 2.5vw;
 
         form {
           @include flex-container(row, space-between);
           flex-wrap: wrap;
 
           & > div {
-            width: 48.5%;
+            width: 30.5vw;
           }
 
           .form-item,
@@ -497,13 +495,13 @@ body {
             overflow: hidden;
 
             &:not(:nth-child(even)) {
-              margin-right: 20px;
+              margin-right: 1.583vw;
             }
 
             input,
             select,
             textarea {
-              width: 100%;
+              width: 98%;
               height: 50px;
               border: 2px solid $white;
               @include border-radius(6px);
@@ -938,7 +936,6 @@ body {
   .single-col-text {
 
     .single-col-text-content {
-
 
       .text-block {
         text-align: center;

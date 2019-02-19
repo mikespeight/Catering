@@ -2,7 +2,7 @@
 *
 *
 *
-*   Styles for std screen down i.e. < 1200px
+*   Styles that cover the transition from 1200px to 992px i.e. between desktop and tablet
 *
 *
 *
@@ -81,7 +81,7 @@ body {
     .connect-content {
 
       .connect-details {
-        width: calc((100% - 60px) / 3);
+        width: 33.333%;
       }
 
       .map-wrapper {
