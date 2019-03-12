@@ -403,6 +403,40 @@ body {
 
   footer {
 
+    .footer-top-row {
+      height: 125px;
+
+      .content {
+        height: inherit;
+        max-height: 125px;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .social {
+          justify-content: center;
+          margin: 0 auto;
+          padding-left: 25px;
+        }
+
+        .sign-up{
+          display: inline-block;
+          margin: 0 auto;
+
+          .inner {
+            margin: 0 auto;
+          }
+
+          a {
+            &.sign-up {
+              margin:0 auto;
+            }
+          }
+        }
+      }
+    }
+
+
+
     div.footer-grid {
 
       &.footer-content {
@@ -457,8 +491,8 @@ body {
     }
 
     .copyright {
-      text-align: right;
-      padding-right: 30px;
+      text-align: center;
+      //padding-right: 30px;
     }
 
     .logos {
