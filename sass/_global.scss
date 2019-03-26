@@ -922,13 +922,26 @@ body {
     height: 100%;
   }
 
+  .single-image {
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
   .triple-image {
 
     .triple-image-content {
       @include flex-container();
 
       .image-block {
-        width: 380px;
+        width: 55.416vw;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -966,7 +979,7 @@ body {
       @include flex-container();
 
       .text-block {
-        width: 585px;
+        width: 48.75vw;
         padding: 0 15px;
 
         h2 {
@@ -981,6 +994,15 @@ body {
           color: $brandPrimary;
         }
       }
+
+      .image-block {
+        width: 48.75vw;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
     }
   }
 
@@ -993,11 +1015,11 @@ body {
         padding:0 15px;
 
         &.col-5-of-12 {
-          width: 475px;
+          width: 39.583vw;
         }
 
         &.col-7-of-12 {
-          width: 665px;
+          width: 55.416vw;
         }
 
         &.grey-bg {
