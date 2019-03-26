@@ -10219,7 +10219,7 @@ body.homepage .hero {
     width: 100%;
     min-height: 605px;
     object-fit: cover;
-    filter: brightness(0.7); }
+    filter: brightness(0.6); }
   body.homepage .hero .social {
     position: absolute;
     z-index: 2;
@@ -10287,7 +10287,7 @@ body.subpage .hero {
     width: 100%;
     min-height: 200px;
     object-fit: cover;
-    filter: brightness(0.7); }
+    filter: brightness(0.6); }
   body.subpage .hero .hero-content {
     color: #fff;
     width: 100%;
