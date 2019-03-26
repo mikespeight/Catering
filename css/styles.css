@@ -9405,7 +9405,7 @@ html[xmlns] .slides {
     background-image: url("../assets/images/green-arrow-right.png");
     background-size: 11px 18px;
     right: 0;
-    text-indent: -10000px;
+    text-indent: 10000px;
     opacity: 1;
     text-align: right; }
     .flexslider .flex-direction-nav .flex-next:before {
@@ -9445,6 +9445,16 @@ html[xmlns] .slides {
   text-indent: 10000px;
   opacity: 1;
   text-align: right; }
+
+@media only screen and (max-width: 992px) {
+  .slider .flexslider .flex-direction-nav a {
+    background-color: transparent; }
+  .slider .flexslider .flex-direction-nav .flex-prev {
+    background-image: url("../assets/images/white-arrow-left.png");
+    background-size: 2.923vw 5.443vw; }
+  .slider .flexslider .flex-direction-nav .flex-next {
+    background-image: url("../assets/images/white-arrow-right.png");
+    background-size: 2.923vw 5.443vw; } }
 
 /***********************************************
 
@@ -11413,7 +11423,7 @@ body footer {
         body .two-col .two-col-content .col .flex-row img {
           width: 100%m; } }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   /******************************************************************************************
 *
 *
@@ -11433,7 +11443,7 @@ body footer {
 *
 *******************************************************************************************/ }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) and (max-width: 991px) {
+@media only screen and (max-width: 992px) and (max-width: 991px) {
   body.subpage header {
     height: 0; }
   header {
@@ -11493,42 +11503,89 @@ body footer {
         header.page-header .top-nav .burger-menu.navbar-toggler {
           border: none; } }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  body {
-    /*&:before {
+@media only screen and (max-width: 992px) {
+  body:before {
     content: 'md screen down i.e. 992 to 768';
     position: fixed;
     z-index: 10000;
-    top:0;
-  }*/ }
-    body.homepage .hero + section {
-      margin-top: 702px; }
-    body.subpage .hero + section {
-      margin-top: 290px; }
-    body .intro .intro-content .inner {
-      padding: 0 70px 30px; }
-    body .slider .flexslider .slides .slide .slide-content img.slide-content-img {
-      width: auto;
-      height: 100%; }
-    body footer .footer-grid.footer-content {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 167px 1fr 100px;
-      grid-template-areas: ". logos" "social ." "footer-nav copyright";
-      height: inherit; }
-    body footer .social a {
-      display: inline-block;
-      color: #fff;
-      margin-right: 16px; }
-      body footer .social a .fa {
-        font-size: 30px;
-        font-size: 3rem; }
-      body footer .social a:nth-child(4) {
-        margin-right: 0; }
-    body footer .copyright {
-      text-align: right;
-      padding-right: 30px; }
-    body footer .logos a {
-      bottom: 70px !important; } }
+    top: 0; }
+  body.homepage .hero .hero-content {
+    width: calc(100% - 100px); }
+    body.homepage .hero .hero-content h1 {
+      top: 175px;
+      font-size: 50px;
+      font-size: 5rem;
+      text-align: center; }
+      body.homepage .hero .hero-content h1 .subhead {
+        font-size: 25px;
+        font-size: 2.5rem; }
+    body.homepage .hero .hero-content .go-down {
+      left: calc(50% + 50px); }
+  body.homepage .hero + section {
+    margin-top: 702px; }
+  body.subpage .hero + section {
+    margin-top: 290px; }
+  body .feature-tiles .tile-container {
+    flex-direction: column; }
+    body .feature-tiles .tile-container > div.tile {
+      width: 100%;
+      height: 600px;
+      cursor: pointer; }
+      body .feature-tiles .tile-container > div.tile:hover .tile-inner .content {
+        opacity: 1;
+        height: 300px;
+        z-index: 1; }
+        body .feature-tiles .tile-container > div.tile:hover .tile-inner .content h2 {
+          bottom: auto;
+          top: 230px; }
+      body .feature-tiles .tile-container > div.tile:hover .tile-inner .content-over {
+        z-index: 100;
+        opacity: 1;
+        height: 369px;
+        top: 230px; }
+        body .feature-tiles .tile-container > div.tile:hover .tile-inner .content-over .find-out-more {
+          cursor: pointer; }
+      body .feature-tiles .tile-container > div.tile .tile-inner .content {
+        height: 300px;
+        z-index: 1; }
+        body .feature-tiles .tile-container > div.tile .tile-inner .content h2 {
+          bottom: auto;
+          top: 230px; }
+      body .feature-tiles .tile-container > div.tile .tile-inner .content-over {
+        z-index: 100;
+        opacity: 1;
+        height: 369px;
+        top: 230px; }
+        body .feature-tiles .tile-container > div.tile .tile-inner .content-over .find-out-more {
+          cursor: pointer; }
+  body .slider .flexslider .slides .slide .slide-content .inner-content {
+    top: 175px; }
+    body .slider .flexslider .slides .slide .slide-content .inner-content .find-out-more {
+      bottom: auto; }
+  body .intro .intro-content .inner {
+    padding: 0 70px 30px; }
+  body .slider .flexslider .slides .slide .slide-content img.slide-content-img {
+    width: auto;
+    height: 100%; }
+  body footer .footer-grid.footer-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 167px 1fr 100px;
+    grid-template-areas: ". logos" "social ." "footer-nav copyright";
+    height: inherit; }
+  body footer .social a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 16px; }
+    body footer .social a .fa {
+      font-size: 30px;
+      font-size: 3rem; }
+    body footer .social a:nth-child(4) {
+      margin-right: 0; }
+  body footer .copyright {
+    text-align: right;
+    padding-right: 30px; }
+  body footer .logos a {
+    bottom: 70px !important; } }
 
 @media only screen and (max-width: 767px) {
   /******************************************************************************************
@@ -11609,18 +11666,25 @@ body footer {
     height: 143px;
     background-size: 134px 143px; }
   body.homepage .hero .hero-content h1 {
+    top: 175px;
     font-size: 40px;
-    font-size: 4rem;
-    text-align: center; }
+    font-size: 4rem; }
     body.homepage .hero .hero-content h1 .subhead {
       font-size: 20px;
       font-size: 2rem; }
+  body.homepage .hero + section {
+    margin-top: 730px; }
   body.subpage .hero .hero-content h1 {
     width: 95%;
     top: 65%;
     font-size: 40px;
     font-size: 4rem;
     text-align: center; }
+  body .brand-logo {
+    left: 36px;
+    width: 120px;
+    height: 132px;
+    background-size: 120px 132px; }
   body .intro {
     height: auto; }
     body .intro .intro-content .inner {
@@ -11657,6 +11721,11 @@ body footer {
         top: 400px; }
   body .feature-tiles .tile-container {
     flex-direction: column; }
+    body .feature-tiles .tile-container > div.tile {
+      width: 100% !important; }
+      body .feature-tiles .tile-container > div.tile .content-over .find-out-more {
+        margin-top: 30px;
+        bottom: auto; }
     body .feature-tiles .tile-container .tile {
       width: 100%; }
   body .feature-block .feature-block-content {

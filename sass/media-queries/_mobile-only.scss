@@ -48,13 +48,17 @@ body {
       .hero-content {
 
         h1 {
+          top:175px;
           @include font-size(40);
-          text-align: center;
 
           .subhead {
             @include font-size(20);
           }
         }
+      }
+
+      & + section {
+        margin-top: 730px;
       }
     }
   }
@@ -73,6 +77,13 @@ body {
         }
       }
     }
+  }
+
+  .brand-logo {
+    left:36px;
+    width:120px;
+    height:132px;
+    background-size: 120px 132px;
   }
 
   .intro {
@@ -152,6 +163,21 @@ body {
 
     .tile-container {
       flex-direction: column;
+
+      & > div {
+
+        &.tile {
+          width:100%!important;
+
+          .content-over {
+
+            .find-out-more {
+              margin-top: 30px;
+              bottom: auto;
+            }
+          }
+        }
+      }
 
       .tile {
         width:100%;

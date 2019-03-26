@@ -44,7 +44,7 @@
       background-image: url("#{$pathToImages}/green-arrow-right.png");
       background-size: 11px 18px;
       right:0;
-      text-indent: -10000px;
+      text-indent: 10000px;
       opacity: 1;
       text-align: right;
 
@@ -108,6 +108,32 @@
       text-indent: 10000px;
       opacity: 1;
       text-align: right;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+
+  .slider {
+
+    .flexslider {
+
+      .flex-direction-nav {
+
+        a {
+          background-color: transparent;
+        }
+
+        .flex-prev {
+          background-image: url("#{$pathToImages}/white-arrow-left.png");
+          background-size: 2.923vw 5.443vw;
+        }
+
+        .flex-next {
+          background-image: url("#{$pathToImages}/white-arrow-right.png");
+          background-size: 2.923vw 5.443vw;
+        }
+      }
     }
   }
 }
