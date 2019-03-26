@@ -35,8 +35,14 @@ body {
           }
         }
 
+        .find-out-more {
+          color: $brandPrimary;
+          background-color: $white;
+        }
+
         .go-down {
           left: calc(50% + 50px);
+
         }
       }
 

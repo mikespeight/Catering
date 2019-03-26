@@ -11519,6 +11519,9 @@ body footer {
       body.homepage .hero .hero-content h1 .subhead {
         font-size: 25px;
         font-size: 2.5rem; }
+    body.homepage .hero .hero-content .find-out-more {
+      color: #78BE20;
+      background-color: #fff; }
     body.homepage .hero .hero-content .go-down {
       left: calc(50% + 50px); }
   body.homepage .hero + section {
