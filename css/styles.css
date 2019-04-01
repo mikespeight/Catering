@@ -9912,7 +9912,6 @@ header {
 *******************************************************************************************/
 section div.wysiwyg {
   display: block !important;
-  padding: 60px 0 40px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300; }
   section div.wysiwyg a {
@@ -11535,7 +11534,7 @@ body footer {
   body.homepage .hero + section {
     margin-top: 702px; }
   body.subpage .hero + section {
-    margin-top: 290px; }
+    margin-top: 330px; }
   body .feature-tiles .tile-container {
     flex-direction: column; }
     body .feature-tiles .tile-container > div.tile {
