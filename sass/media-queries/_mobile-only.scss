@@ -46,13 +46,15 @@ body {
     .hero {
 
       .hero-content {
+        //width: calc(100% - 72px);
 
         h1 {
           top:175px;
-          @include font-size(40);
+          //@include font-size(40);
 
           .subhead {
             @include font-size(20);
+            margin-top: 20px;
           }
         }
       }

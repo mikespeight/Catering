@@ -10371,7 +10371,7 @@ body .feature-tiles .tile-container {
         font-size: 2.4rem;
         line-height: 27px;
         font-weight: 300;
-        text-align: justify; }
+        text-align: center; }
       body .feature-tiles .tile-container .tile .content-over .find-out-more {
         position: absolute;
         left: 50%;
@@ -11510,8 +11510,12 @@ body footer {
     z-index: 10000;
     top: 0; }
   body.homepage .hero .hero-content {
-    width: calc(100% - 100px); }
+    width: 100%; }
     body.homepage .hero .hero-content h1 {
+      padding: 0 36px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       top: 175px;
       font-size: 50px;
       font-size: 5rem;
@@ -11521,9 +11525,13 @@ body footer {
         font-size: 2.5rem; }
     body.homepage .hero .hero-content .find-out-more {
       color: #78BE20;
-      background-color: #fff; }
+      background-color: #fff;
+      left: calc(50%);
+      transform: translateX(-50%); }
     body.homepage .hero .hero-content .go-down {
-      left: calc(50% + 50px); }
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
   body.homepage .hero + section {
     margin-top: 702px; }
   body.subpage .hero + section {
@@ -11669,12 +11677,11 @@ body footer {
     height: 143px;
     background-size: 134px 143px; }
   body.homepage .hero .hero-content h1 {
-    top: 175px;
-    font-size: 40px;
-    font-size: 4rem; }
+    top: 175px; }
     body.homepage .hero .hero-content h1 .subhead {
       font-size: 20px;
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin-top: 20px; }
   body.homepage .hero + section {
     margin-top: 730px; }
   body.subpage .hero .hero-content h1 {

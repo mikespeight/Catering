@@ -23,12 +23,15 @@ body {
     .hero {
 
       .hero-content {
-        width:calc(100% - 100px);
+        width: 100%;
 
         h1 {
+          padding: 0 36px;
+          @include centerH;
           top:175px;
           @include font-size(50);
           text-align: center;
+
 
           .subhead {
             @include font-size(25);
@@ -38,11 +41,12 @@ body {
         .find-out-more {
           color: $brandPrimary;
           background-color: $white;
+          left: calc(50%);
+          transform: translateX(-50%);
         }
 
         .go-down {
-          left: calc(50% + 50px);
-
+          @include centerH;
         }
       }
 
