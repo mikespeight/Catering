@@ -17,6 +17,7 @@
   ],
   "devDependencies": {
     "jquery": "^3.2.1",
-    "flexslider-scss": "^1.0.0"
+    "flexslider-scss": "^1.0.0",
+    "fontawesome": "font-awesome#^5.8.1"
   }
 }

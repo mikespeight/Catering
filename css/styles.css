@@ -10457,6 +10457,9 @@ body .connect {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap; }
+        body .connect .connect-content .contact-form form.contact-form {
+          width: 100%;
+          padding: 0; }
         body .connect .connect-content .contact-form form > div {
           width: 30.5vw; }
         body .connect .connect-content .contact-form form .form-item,
