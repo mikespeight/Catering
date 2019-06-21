@@ -10454,8 +10454,9 @@ body .connect {
       width: 66.666%;
       padding-right: 2.5vw; }
       body .connect .connect-content .contact-form form {
+        height: 260px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap; }
         body .connect .connect-content .contact-form form.contact-form {
@@ -10514,7 +10515,9 @@ body .connect {
                 background-color: #2C5234; }
           body .connect .connect-content .contact-form form .form-item textarea,
           body .connect .connect-content .contact-form form .form-actions textarea {
-            padding-top: 9px; }
+            padding-top: 9px;
+            height: 136px;
+            margin-bottom: 30px; }
           body .connect .connect-content .contact-form form .form-item select,
           body .connect .connect-content .contact-form form .form-actions select {
             padding: 0 20px; }
@@ -11832,6 +11835,7 @@ body footer {
         width: calc(100% - 45px);
         margin: 0 30px; }
         body .connect .connect-content .contact-form form {
+          height: auto;
           flex-direction: column; }
           body .connect .connect-content .contact-form form > div {
             width: 100%; }

@@ -483,7 +483,8 @@ body {
         padding-right: 2.5vw;
 
         form {
-          @include flex-container(row, space-between);
+          height:260px;
+          @include flex-container(column, space-between);
           flex-wrap: wrap;
 
           &.contact-form {
@@ -535,6 +536,8 @@ body {
             }
             textarea {
               padding-top: 9px;
+              height: 136px;
+              margin-bottom: 30px;
             }
 
             select {
