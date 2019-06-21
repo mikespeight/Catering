@@ -9915,7 +9915,8 @@ section div.wysiwyg {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300; }
   section div.wysiwyg a {
-    display: inline; }
+    display: inline;
+    color: #78BE20; }
   section div.wysiwyg p {
     font-size: 18px;
     font-size: 1.8rem;
