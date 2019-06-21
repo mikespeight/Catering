@@ -11,12 +11,12 @@
 
 body {
 
-  &:before {
+  /*&:before {
     content: 'md screen down i.e. 992 to 768';
     position: fixed;
     z-index: 10000;
     top:0;
-  }
+  }*/
 
   &.homepage {
 

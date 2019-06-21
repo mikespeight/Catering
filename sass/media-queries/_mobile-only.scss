@@ -22,13 +22,13 @@ body {
 
 body {
 
-  &:before {// TODO: remove for test only
+  /*&:before {// TODO: remove for test only
     position: fixed;
     top: 0;
     z-index: 1000;
     content: 'Mobile only < 480px';
     @include font-size(26);
-  }
+  }*/
 
   a {
 

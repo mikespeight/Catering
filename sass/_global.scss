@@ -772,7 +772,16 @@ body {
           }
         }
 
+        p {
+          @include font-size(20);
+          font-weight: $regular;
 
+          &.static-copy {
+            position: absolute;
+            bottom: 36px;
+            font-weight: $semiBold;
+          }
+        }
 
         a {
 
